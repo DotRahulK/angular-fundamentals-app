@@ -1,21 +1,25 @@
-<header>
-  <h1 style="margin: 1rem;">{{ title }}</h1>
-  <nav>
-    <a routerLink="/fundamentals" routerLinkActive="active">Fundamentals</a>
-    <a routerLink="/interpolation" routerLinkActive="active">Interpolation &amp; Binding</a>
-    <a routerLink="/event-binding" routerLinkActive="active">Event Binding</a>
-    <a routerLink="/two-way-binding" routerLinkActive="active">Two‑Way Binding</a>
-    <a routerLink="/directive-demo" routerLinkActive="active">Directives</a>
-    <a routerLink="/pipe-demo" routerLinkActive="active">Pipes</a>
-    <a routerLink="/service-demo" routerLinkActive="active">Services</a>
-    <a routerLink="/lifecycle-demo" routerLinkActive="active">Lifecycle</a>
-    <a routerLink="/signals-demo" routerLinkActive="active">Signals</a>
-    <a routerLink="/ngrx-demo" routerLinkActive="active">NgRx Demo</a>
-  </nav>
-</header>
+<mat-toolbar color="primary">
+  <span>{{ title }}</span>
+  <span class="spacer"></span>
+  <mat-slide-toggle (change)="toggleTheme()" [checked]="isDarkTheme">
+    Dark mode
+  </mat-slide-toggle>
+</mat-toolbar>
 
-<!-- The router outlet is where components associated with routes are rendered -->
-<main style="padding: 1rem;">
-  Yes
+<nav>
+  <a mat-button routerLink="/fundamentals" routerLinkActive="active">Fundamentals</a>
+  <a mat-button routerLink="/interpolation" routerLinkActive="active">Interpolation &amp; Binding</a>
+  <a mat-button routerLink="/event-binding" routerLinkActive="active">Event Binding</a>
+  <a mat-button routerLink="/two-way-binding" routerLinkActive="active">Two‑Way Binding</a>
+  <a mat-button routerLink="/directive-demo" routerLinkActive="active">Directives</a>
+  <a mat-button routerLink="/pipe-demo" routerLinkActive="active">Pipes</a>
+  <a mat-button routerLink="/service-demo" routerLinkActive="active">Services</a>
+  <a mat-button routerLink="/lifecycle-demo" routerLinkActive="active">Lifecycle</a>
+  <a mat-button routerLink="/signals-demo" routerLinkActive="active">Signals</a>
+  <a mat-button routerLink="/ngrx-demo" routerLinkActive="active">NgRx Demo</a>
+</nav>
+
+<main style="padding: 1rem;" class="mat-app-background">
   <router-outlet></router-outlet>
 </main>
+
