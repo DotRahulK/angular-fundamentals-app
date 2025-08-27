@@ -1,0 +1,16 @@
+<h2>Signals Demo</h2>
+<p>Signals provide fine‑grained reactivity. The <code>counter</code>
+  signal is updated using the buttons below. A computed signal
+  <code>doubled</code> derives its value from <code>counter</code> and
+  updates automatically. An effect appends a message to the log each
+  time the counter changes.</p>
+<p>Counter: {{ counter() }}</p>
+<p>Doubled: {{ doubled() }}</p>
+<div>
+  <button (click)="increment()">+</button>
+  <button (click)="decrement()">-</button>
+</div>
+<h3>Change log</h3>
+<ul>
+  <li *ngFor="let l of log">{{ l }}</li>
+</ul>

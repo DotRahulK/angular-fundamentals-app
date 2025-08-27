@@ -1,0 +1,19 @@
+<h2>NgRx Demo</h2>
+<p>This simplified counter uses a service backed by an RxJS
+  <code>BehaviorSubject</code> to manage state. It illustrates the
+  principles of unidirectional data flow: the component dispatches
+  actions by calling methods on the store, and the view subscribes to
+  the store’s observable state.</p>
+<p>Count: {{ count$ | async }}</p>
+<button (click)="increment()">Increment</button>
+<button (click)="decrement()">Decrement</button>
+<button (click)="reset()">Reset</button>
+
+<h3>About NgRx</h3>
+<p>{{ ngrxDescription }}</p>
+<p>The following files in this project illustrate a typical NgRx setup:</p>
+<ul>
+  <li><code>counter.actions.ts</code> – defines increment, decrement and reset actions.</li>
+  <li><code>counter.reducer.ts</code> – a pure function that handles actions and returns new state.</li>
+  <li><code>counter.selectors.ts</code> – derives the current count and doubled count.</li>
+</ul>

@@ -1,0 +1,7 @@
+<h2>Interpolation and Property Binding</h2>
+<p>The greeting returned by a method: {{ getGreeting() }}</p>
+<p>The value of <code>name</code> via interpolation: {{ name }}</p>
+<img [src]="imageUrl" alt="Angular logo" width="120" style="display:block;margin:0.5rem 0;" />
+<label for="nameInput">Edit name:</label>
+<input id="nameInput" [value]="name" (input)="name = ($any($event.target)).value" />
+<p>Updated name: {{ name }}</p>

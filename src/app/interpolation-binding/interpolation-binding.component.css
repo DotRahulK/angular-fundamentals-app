@@ -1,0 +1,11 @@
+/* Styles for the interpolation demo */
+img {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 4px;
+  background-color: #fff;
+}
+input {
+  margin-left: 0.5rem;
+  padding: 0.25rem;
+}

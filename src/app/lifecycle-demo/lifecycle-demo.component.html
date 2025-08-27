@@ -1,0 +1,13 @@
+<h2>Lifecycle Hooks Demo</h2>
+<p>This example shows how Angular calls lifecycle hooks on a child
+  component. Clicking <em>Change input</em> updates the <code>count</code>
+  input passed to the child and triggers <code>ngOnChanges</code>. Toggling
+  the child removes and recreates it, invoking <code>ngOnDestroy</code>
+  and <code>ngOnInit</code> respectively.</p>
+<div>
+  <button (click)="increment()">Change input (count)</button>
+  <button (click)="toggle()">{{ showChild ? 'Destroy' : 'Create' }} child</button>
+</div>
+<div *ngIf="showChild">
+  <app-lifecycle-child [count]="count"></app-lifecycle-child>
+</div>

@@ -1,0 +1,57 @@
+<section>
+  <h2>Core Angular Fundamentals</h2>
+  <ul>
+    <li><strong>Components &amp; templates:</strong> Angular applications are built from
+      components. A component combines a TypeScript class with an HTML
+      template. Templates use interpolation, property binding, event binding
+      and structural directives to display data and respond to user
+      interaction.</li>
+    <li><strong>Data binding:</strong> Angular supports one‑way data flow with
+      interpolation and property binding, and two‑way data flow via
+      <code>[(ngModel)]</code>. Event binding lets you respond to user
+      actions.</li>
+    <li><strong>Directives:</strong> Structural directives like
+      <code>*ngIf</code> and <code>*ngFor</code> change the DOM by
+      adding or removing elements. Attribute directives such as
+      <code>ngClass</code> and <code>ngStyle</code> modify the appearance
+      or behaviour of existing elements.</li>
+    <li><strong>Pipes:</strong> Pipes transform values in templates. Angular
+      includes many built‑in pipes for dates, numbers and internationalisation.
+      You can also write custom pipes.</li>
+    <li><strong>Services &amp; dependency injection:</strong> Services provide
+      reusable logic and data. Angular’s dependency injection system
+      supplies services to components on demand.</li>
+    <li><strong>Routing:</strong> The Angular router maps URLs to components
+      and enables navigation across an application.</li>
+  </ul>
+
+  <h2>What's New in Angular&nbsp;19</h2>
+  <ul>
+    <li><strong>Standalone components by default:</strong> All components,
+      directives and pipes are standalone by default, eliminating the need to
+      specify <code>standalone: true</code>【367358163789808†L204-L208】.</li>
+    <li><strong>Signals:</strong> Signal‑based APIs like <code>Input</code>,
+      <code>Model</code> and <code>Output</code> are now stable【367358163789808†L216-L223】.
+      Angular 19 introduces experimental features such as
+      <code>linkedSignal</code>, which combines a computed expression with
+      mutable state【367358163789808†L224-L229】, and a <code>Resource</code> API to
+      simplify asynchronous values【367358163789808†L229-L232】.</li>
+    <li><strong>Automatic refactoring tools:</strong> The Angular CLI
+      includes migration commands like <code>signal-input-migration</code>
+      and <code>signal-queries-migration</code> that refactor existing code
+      to use signal‑based APIs【367358163789808†L234-L244】.</li>
+    <li><strong>Fine‑grained reactivity:</strong> Signals enable
+      fine‑grained reactivity, enhancing performance and simplifying
+      debugging while making Zone.js optional【367358163789808†L296-L305】.</li>
+    <li><strong>Improved server‑side rendering:</strong> Event replay and
+      incremental hydration, inspired by Google Search, deliver faster
+      initial loads and smoother interactions【367358163789808†L309-L317】.</li>
+    <li><strong>Angular Material updates:</strong> A simplified
+      <code>mat.theme</code> API, two‑dimensional drag‑and‑drop and a
+      time picker component expand the Material library【367358163789808†L253-L270】.</li>
+    <li><strong>Collaborations across ecosystems:</strong> Integrations
+      with Firebase, Netlify, Vite and testing tools like Puppeteer and
+      Playwright empower developers【367358163789808†L323-L331】.</li>
+  </ul>
+  <p>Select a topic from the navigation bar to explore interactive examples.</p>
+</section>

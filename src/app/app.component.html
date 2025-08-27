@@ -1,0 +1,21 @@
+<header>
+  <h1 style="margin: 1rem;">{{ title }}</h1>
+  <nav>
+    <a routerLink="/fundamentals" routerLinkActive="active">Fundamentals</a>
+    <a routerLink="/interpolation" routerLinkActive="active">Interpolation &amp; Binding</a>
+    <a routerLink="/event-binding" routerLinkActive="active">Event Binding</a>
+    <a routerLink="/two-way-binding" routerLinkActive="active">Two‑Way Binding</a>
+    <a routerLink="/directive-demo" routerLinkActive="active">Directives</a>
+    <a routerLink="/pipe-demo" routerLinkActive="active">Pipes</a>
+    <a routerLink="/service-demo" routerLinkActive="active">Services</a>
+    <a routerLink="/lifecycle-demo" routerLinkActive="active">Lifecycle</a>
+    <a routerLink="/signals-demo" routerLinkActive="active">Signals</a>
+    <a routerLink="/ngrx-demo" routerLinkActive="active">NgRx Demo</a>
+  </nav>
+</header>
+
+<!-- The router outlet is where components associated with routes are rendered -->
+<main style="padding: 1rem;">
+  Yes
+  <router-outlet></router-outlet>
+</main>

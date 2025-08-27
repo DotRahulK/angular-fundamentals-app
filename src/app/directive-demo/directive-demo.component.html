@@ -1,0 +1,9 @@
+<h2>Directive Demo</h2>
+<p>This page uses the structural directives <code>*ngIf</code> and
+  <code>*ngFor</code>. Click the button to toggle the list. When the list
+  is shown, *ngFor iterates over the <code>items</code> array and
+  renders a list element for each string.</p>
+<button (click)="show = !show">{{ show ? 'Hide' : 'Show' }} List</button>
+<ul *ngIf="show">
+  <li *ngFor="let item of items">{{ item }}</li>
+</ul>
